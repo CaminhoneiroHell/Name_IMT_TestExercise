@@ -30,4 +30,10 @@ public class FinanceManager : MonoBehaviour
         totalMoney += amount;
         MoneyUpdated.Invoke();
     }
+
+    public void UpdateLoadedMoney(double amount)
+    {
+        totalMoney = amount;
+        MoneyUpdated.Invoke();
+    }
 }
